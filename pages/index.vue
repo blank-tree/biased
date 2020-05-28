@@ -15,6 +15,9 @@
     name: 'biased',
     components: {
       ManifestBlock
+    },
+    mounted() {
+      this.$store.commit('sortManifest');
     }
   }
 </script>

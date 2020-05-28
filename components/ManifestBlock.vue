@@ -35,7 +35,7 @@
   }
 
   .manifest-group-move {
-    transition: transform .75s;
+    transition: transform 1s;
   }
 
   .point {

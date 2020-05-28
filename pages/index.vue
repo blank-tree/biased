@@ -1,10 +1,20 @@
 <template>
-  <div id="manifest-wrapper">
-
+  <div
+    id="manifest-wrapper"
+    @click="$store.commit('sortManifest')"
+  >
+    <v-row
+      justify="center"
+    >
+      <v-col
+        cols="12"
+        md="9"
+      >
         <ManifestBlock
           :posts="$store.state.posts"
         />
-
+      </v-col>
+    </v-row>
   </div>
 </template>
 
@@ -24,7 +34,8 @@
 
 <style lang="scss">
   #manifest-wrapper {
-    margin: 2rem 0;
+    padding: 1rem 0;
+    min-height: 100vh;
 
   }
 </style>

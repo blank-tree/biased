@@ -1,7 +1,6 @@
 <template>
   <div
     id="manifest-block"
-    @click="$store.commit('sortManifest')"
   >
     <transition-group
       name="manifest-group" tag="div"

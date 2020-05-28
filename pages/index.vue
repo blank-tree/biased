@@ -7,7 +7,7 @@
         >
           <div
             v-for="(point, index) in manifest"
-            :key="index"
+            :key="point.slice(0,5) + index"
             class="point"
             v-html="point"
           />
@@ -57,3 +57,24 @@
     }
   }
 </script>
+
+<style lang="scss">
+  #manifest {
+    //position: absolute;
+    //top: 50%;
+    //left: 50%;
+    // min-height: 100vh;
+    // transform: translate(0, 50%);
+    margin-top: 6rem;
+
+    .point {
+      display: inline;
+      font-weight: 600;
+      letter-spacing: 0.1rem;
+
+      &:after {
+        content: ' '
+      }
+    }
+  }
+</style>

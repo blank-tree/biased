@@ -1,16 +1,23 @@
 <template>
-  <v-row>
-    <v-col>
-      <div>
-        <h1>hello</h1>
-      </div>
-    </v-col>
-  </v-row>
+  <div id="manifest">
+    <v-row>
+      <v-col>
+        <transition-group
+          name="manifest" tag="div"
+        >
+          <div
+            v-for="(point, index) in manifest"
+            :key="index"
+            class="point"
+            v-html="point"
+          />
+        </transition-group>
+      </v-col>
+    </v-row>
+  </div>
 </template>
 
 <script>
-
-
   export default {
     name: 'biased',
     components: {},

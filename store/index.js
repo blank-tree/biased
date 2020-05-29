@@ -15,8 +15,8 @@ export const state = () => ({
 
 export const mutations = {
   sortManifest(state) {
-    state.posts.sort(function (a, b) {
-      return Math.random() > 0.5;
+    state.posts.sort(function () {
+      return .5 - Math.random();
     });
     /*
     let randomised = state.posts;

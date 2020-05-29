@@ -1,7 +1,7 @@
 export const state = () => ({
   posts: [
-    'Das Artefakt zeigt seine eigene Gemachtheit und wirkt subjektiv.',
-    'Sich selbst und den Kontext hinterfragen, anstelle einer neuen Lösung.',
+    'Das Artefakt zeigt seine eigene Gemachtheit und wirkt subjektiv auf die Betrachter*innen.',
+    'Es hinterfragt sich selbst und den Kontext; es stellt keine neue Lösung dar.',
     'Die Ästhetik richtet sich an der Geschichte und/oder dem Kontext aus, nicht den eigenen Präferenzen.',
     'Missverständnisse und Irritationen sind erwünscht, begründen sich aber auf dem zu reflektierenden Forschungsgegenstand und nicht der Schaulust.',
     'Die Neusetzung muss in sich funktionieren und darf nicht fingieren.',
